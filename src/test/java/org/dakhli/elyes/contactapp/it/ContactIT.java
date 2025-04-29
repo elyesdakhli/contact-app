@@ -223,10 +223,10 @@ public class ContactIT {
     }
 
     private CompletableFuture<Contact> supplyAsyncApiCreate(ContactInsertRequest contactInsertRequest, ExecutorService executorService) {
-        return CompletableFuture.supplyAsync(() -> peformCreateContactPost(contactInsertRequest), executorService);
+        return CompletableFuture.supplyAsync(() -> performCreateContactPost(contactInsertRequest), executorService);
     }
 
-    private Contact peformCreateContactPost(ContactInsertRequest contactInsertRequest) {
+    private Contact performCreateContactPost(ContactInsertRequest contactInsertRequest) {
         try {
             MvcResult mvcResult =
                     mockMvc.perform(post(ContactEndpoint.ADD.getFullPath())
