@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: contact-app
+  datasource:
+    url: ${DATABASE_PROTOCOL}://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: ${DATABASE_DRIVER}
+  jpa:
+    database-platform: ${DATABASE_DIALECT}
+

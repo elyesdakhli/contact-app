@@ -1,0 +1,4 @@
+GET http://localhost:8080/contacts/all
+
+###
+GET http://localhost:8080/contacts/generate?size=35

@@ -1,0 +1,7 @@
+CREATE TABLE contact (
+   id VARCHAR(128) PRIMARY KEY,
+   firstName VARCHAR(255) NOT NULL,
+   lastName VARCHAR(255) NOT NULL,
+   tel VARCHAR(255) NOT NULL,
+   email VARCHAR(255) NOT NULL
+);

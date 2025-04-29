@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configmap
+data:
+  host: "postgres"
+  name: "contact-app-db"
+  protocol: "jdbc:postgresql"
+  port: "5432"
